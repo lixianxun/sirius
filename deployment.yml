@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: kayak-app
-          image: gcr.io/spring-boot-gke/kayak-app-auth:1.0
+          image: gcr.io/sirius/kayak-app-auth:1.0
           imagePullPolicy: IfNotPresent
           env:
             - name: MONGODB_HOST
