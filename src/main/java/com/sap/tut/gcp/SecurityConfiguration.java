@@ -1,4 +1,4 @@
-package com.sap.tut.gcp;
+/*package com.sap.tut.gcp;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -26,3 +26,4 @@ public class SecurityConfiguration {
 
 }
 
+*/
