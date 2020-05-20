@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-ENV APP_FILE springbootkbe-0.0.1-SNAPSHOT.jar
+ENV APP_FILE sirius-0.0.1-SNAPSHOT.jar
 ENV APP_HOME /usr/app
 EXPOSE 8000
 COPY build/libs/*.jar $APP_HOME/
