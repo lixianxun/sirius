@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.15.BUILD-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.sap.tut.gcp'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+	compile("org.springframework.boot:spring-boot-starter-security")
+	compile("org.springframework.security:spring-security-oauth2-client")
+	compile("org.springframework.security:spring-security-oauth2-resource-server")
+	compile("org.springframework.security:spring-security-oauth2-jose")
+	
+	compileOnly 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+}
