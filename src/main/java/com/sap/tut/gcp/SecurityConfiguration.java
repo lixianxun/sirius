@@ -1,4 +1,4 @@
-package com.sap.tut.gcp;
+/*package com.sap.tut.gcp;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -16,16 +16,17 @@ public class SecurityConfiguration {
     	http.authorizeExchange().pathMatchers("/").permitAll()
     	.pathMatchers("/kayaks").permitAll();
     	
-        /*http
+        http
             .authorizeExchange()
             .pathMatchers("/").permitAll()
             .pathMatchers("/**").permitAll()
             .anyExchange().authenticated()
             .and()
             .oauth2ResourceServer()
-            .jwt();*/
+            .jwt();
         return http.build();
     }
 
 }
 
+*/
