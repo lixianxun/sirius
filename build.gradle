@@ -24,8 +24,8 @@ dependencies {
 	compile("org.springframework.security:spring-security-oauth2-jose")
 	// compile("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
 	
-	compile 'org.springframework.security:spring-security-oauth2-client'
-	compile 'org.springframework.security:spring-security-oauth2-resource-server'
+	// compile 'org.springframework.security:spring-security-oauth2-client'
+	// compile 'org.springframework.security:spring-security-oauth2-resource-server'
 	
 	
 	compileOnly 'org.projectlombok:lombok'
