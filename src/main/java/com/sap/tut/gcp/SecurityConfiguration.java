@@ -16,6 +16,7 @@ public class SecurityConfiguration {
         http
             .authorizeExchange()
             .pathMatchers("/").permitAll()
+            .pathMatchers("/**").permitAll()
             .anyExchange().authenticated()
             .and()
             .oauth2ResourceServer()
